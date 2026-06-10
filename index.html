@@ -54,6 +54,27 @@ body{font-family:'Barlow',sans-serif;
 .erro{padding:50px 10px;}
 .erro .prize-value{font-size:clamp(1.6rem,9vw,2.4rem);background:linear-gradient(180deg,#888,#444);-webkit-background-clip:text;background-clip:text;}
 .foot{margin-top:36px;font-family:'Oswald',sans-serif;letter-spacing:.3em;font-size:.6rem;text-transform:uppercase;opacity:.35}
+
+/* ===== Ajuste para celular: compacta tudo para caber sem rolar ===== */
+@media (max-height:780px), (max-width:430px){
+  .wrap{padding:18px 22px;}
+  .aniv{margin-bottom:18px;}
+  .gift-stage{height:170px;margin-bottom:14px;}
+  .gift{width:130px;height:115px;}
+  .box-base{width:122px;height:88px;left:4px;}
+  .box-vrib{width:24px;height:88px;}
+  .lid{top:26px;width:130px;height:38px;}
+  .lid-rib{width:24px;height:38px;}
+  .bow span{width:27px;height:21px;border-width:6px;}
+  .bow .l{left:-24px}.bow .r{left:-3px}
+  .opened .lid{transform:translateY(-70px) rotate(-22deg)}
+  .opened .bow{transform:translateY(-95px) rotate(15deg)}
+  .prize-value{font-size:clamp(3.8rem,24vw,5.5rem);}
+  .prize-msg{margin-top:10px;font-size:.88rem;}
+  .ticket{margin-top:18px;padding:14px 18px;}
+  .recep{margin-top:14px;padding-top:14px;}
+  .foot{margin-top:20px;}
+}
 </style>
 </head>
 <body>
@@ -67,7 +88,7 @@ body{font-family:'Barlow',sans-serif;
 <script>
 /* ===== Mapa de codigos embutido (codigo -> faixa) ===== */
 const MAPA = {"WTZJ": "100", "6YQF": "50", "797W": "15", "UR7F": "15", "N5DR": "15", "NN8E": "15", "4ECJ": "15", "5WPA": "10", "25GB": "10", "JL3P": "10", "BSDM": "10", "3BHR": "10", "GNEM": "10", "S2LB": "10", "QBT2": "10", "GE9L": "10", "6CNJ": "10", "94QL": "10", "5436": "10", "5WZQ": "10", "M7LA": "05", "ESL5": "05", "C9PD": "05", "A5M5": "05", "XFNY": "05", "HYG6": "05", "EHGN": "05", "3VC4": "05", "NGUU": "05", "QV5U": "05", "FE8V": "05", "6ZN3": "05", "2DN9": "05", "MQRT": "05", "KYKW": "05", "89CQ": "05", "VHHR": "05", "G6PG": "05", "B3LF": "05", "3G29": "05", "LCLL": "05", "BVDB": "05", "B29J": "05", "HPCD": "05", "E2SF": "05", "C5XY": "05", "PEK7": "05", "2CTM": "05", "P9KJ": "05", "GUVX": "05", "V6GY": "key", "4VKD": "key", "TSX2": "key", "DV9A": "key", "EL4V": "key", "ETKK": "key", "RUX6": "key", "EM2L": "key", "EJLH": "key", "3YV6": "key", "9B4M": "key", "EMN9": "key", "T2WJ": "key", "KMSZ": "key", "YXX4": "key", "EGLF": "key", "5WAG": "key", "59KF": "key", "QD38": "key", "BCQZ": "key", "C9JB": "key", "FGE9": "key", "BASS": "key", "KLDN": "key", "7WMC": "key", "QQAU": "key", "5JLL": "key", "8JCN": "key", "C2PN": "key", "FHQP": "key", "HTLD": "key", "YS8M": "key", "SZNB": "key", "QQW3": "key", "P7UX": "key", "ZGA4": "key", "8LU5": "key", "LNL7": "key", "9ZAV": "key", "NF87": "key", "K4FD": "key", "BRZZ": "key", "PKXU": "key", "DMKA": "key", "9EJS": "key", "PF3Q": "key", "S9Z9": "key", "AYBD": "key", "6FXT": "key", "U9YX": "key"};
-const VALIDADE = "31/07/2026";
+const VALIDADE = "30/06/2026";
 const PREMIOS = {
   "100":{valor:"100",msg:"Plano contratado com desconto total. Voc&ecirc; gabaritou!"},
   "50": {valor:"50", msg:"Metade do valor no plano escolhido. Que sorte!"},
